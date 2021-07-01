@@ -10,8 +10,6 @@ const App = () => {
       let records = await fetch('/api');
       let data = await records.json();
 
-      console.log(data);
-
       setStudentNames(data.data);
     }
 

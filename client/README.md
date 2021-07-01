@@ -1,3 +1,3 @@
 # Notes
 
-Added a proxy field in package.json
+- Added proxy field in package.json
