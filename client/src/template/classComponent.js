@@ -1,9 +1,8 @@
-import React, { Component } from 'react'
-import { increment } from '../actions/templateActions';
+import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { increment } from '../actions/templateActions';
 
 class classComponent extends Component {
-
     constructor(props) {
         super(props);
 
@@ -11,6 +10,12 @@ class classComponent extends Component {
             title: ""
         }
     } 
+
+    /* -------------------
+    * componentDidMount(){}
+    * componentDidUpdate(){}
+    * componentWillUnmount(){}
+    -------------------- */
     
     render(){
         return (
@@ -25,14 +30,14 @@ class classComponent extends Component {
 }
 
 // useSelector => mapStateToProps
-const mapStateToProps = (state) => {
+const mapStateToProps = state => {
     return {
         count: state.template.counter
     }
 }
 
 // useDispatch => mapDispatchToProps
-const mapDispatchToProps = (dispatch) => {
+const mapDispatchToProps = dispatch => {
     return {
         increment: () => dispatch(increment(4))
     }
