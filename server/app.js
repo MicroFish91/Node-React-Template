@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 
-app.get('/api'), (req, res) => {
+app.get('/api', (req, res) => {
   res.json({ data: [
     {
       id: 1,
@@ -12,7 +12,7 @@ app.get('/api'), (req, res) => {
       name: 'Fisher'
     }
   ]});
-}
+});
 
 const port = process.env.PORT | "3001";
 
