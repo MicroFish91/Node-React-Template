@@ -3,6 +3,8 @@ const express = require("express");
 const morgan = require("morgan");
 const app = express();
 
+app.use(helmet()); // Secure header
+
 // Log Traffic
 if (app.get("env") === "development") {
   app.use(morgan("tiny"));
