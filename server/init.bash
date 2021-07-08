@@ -1,3 +1,5 @@
+# sequelize init
+
 # --- Generate base table models and migration files ('models' and 'migrations' folders) ---
 # sequelize model:generate --name user --attributes firstName:string,lastName:string,email:string
 
