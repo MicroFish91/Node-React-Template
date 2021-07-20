@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
 const BaseLayout = (props) => {
   return (
@@ -9,11 +9,12 @@ const BaseLayout = (props) => {
           <Link to="/">Home Page</Link> <br />
           <Link to="/hooks">Hook Demo</Link> <br />
           <Link to="/class">Class Demo</Link> <br />
+          <Link to="/rr/2/Joe" />
         </li>
       </ul>
       {props.children}
     </>
-  )
-}
+  );
+};
 
 export default BaseLayout;
